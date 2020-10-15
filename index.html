@@ -1,5 +1,8 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +10,63 @@
   <!-- <link rel="stylesheet" href="reset.scss"> -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <audio
-    crossorigin="anonymous"
-    autoplay="true"
-    controls="true" 
-  >
-    <source
-      src="http://217.182.170.85:8000/stream"
-      type="audio/mpeg"
-    >
-  </audio>
+
+
+  <img src="images/radio.svg" id="imageRadio" />
+
+
+  <img src="images/chaudron2.svg" id="imageChaudron" />
+
+
+  <div id="colonneDroite">
+    
+
+    <p>'ouvre le grimoire' <br>
+      Pour faire une bonne potion, il vous faut:<br>
+      -un chaudron<br>
+      -du partage<br>
+      -de la musique<br>
+      -des interviews<br>
+      -la parole pour tous<br>
+      -des sentiments<br>
+      -des sons expérimentés<br>
+      Dans le chaudron, ajoutez tous<br>
+      les éléments d'un coup,
+      mélangez, <br>
+      faites bouillir :<br>
+      C'est prêt, Radio Chaudron.<br>
+      ...<br>
+
+    </p>
+
+
+
+    <!--    <audio crossorigin="anonymous" autoplay="true" controls="true" >
+        <source
+          src="http://217.182.170.85:8000/stream"
+          type="audio/mpeg"
+        >
+      </audio >
+      -->
+
+    <audio id="player" src="http://217.182.170.85:8000/stream"></audio>
+    <div>
+      <button id="play" onclick="document.getElementById('player').play()">Play</button>
+      <button id="pause" onclick="document.getElementById('player').pause()">Pause</button>
+      <button id="plus" onclick="document.getElementById('player').volume += 0.1">Vol +</button>
+      <button id="moins" onclick="document.getElementById('player').volume -= 0.1">Vol -</button>
+    </div>
+
+  </div>
+
+
   <script src="main.js"></script>
+
+
+
+
 </body>
+
 </html>

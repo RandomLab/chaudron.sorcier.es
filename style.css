@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Cantique-Normal";
+    src: url("font/cantique-master/fonts/web/Cantique-Normal.woff2") format("woff2"),
+        url("font/cantique-master/fonts/web/Cantique-Normal.woff") format("woff");
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: rgba(124, 71, 148, 0.8824884792626728);
+    background: linear-gradient(180deg, rgba(0, 151, 68, 1) 0%,
+            rgba(124, 71, 148, 0.8824884792626728) 80%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+#imageChaudron {
+    display: block;
+    width: calc(50% - 500px);
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 200px;
+
+    float: left;
+
+    /*background-color: rgba(0,255,0,0.5);*/
+}
+
+#colonneDroite {
+    width: calc(50% - 350px);
+    margin-right: 200px;
+    margin-left: 150px;
+    margin-top: 150px;
+    float: left;
+    font-family:  "Cantique-Normal";
+    line-height: 150%;
+    font-size: 1.25vw;
+
+
+}
+
+#imageRadio {
+
+    display: block;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    padding: 0;
+
+    /*
+    background-color: rgba(255,255,0,0.5);
+    */
+
+}
+
+#play {
+    background: url(images/play.svg) no-repeat;
+
+}
+
+#pause {
+    background: url(images/pause.svg) no-repeat;
+}
+
+#plus {
+    background: url(images/plus.svg) no-repeat;
+}
+
+#moins {
+    background: url(images/moins.svg) no-repeat;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    height: 100px;
+}
+
+button:active {
+
+    width: 500px
+}
