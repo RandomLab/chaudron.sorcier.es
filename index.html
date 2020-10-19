@@ -51,12 +51,12 @@
       </audio >
       -->
 
-    <audio id="player" src="http://217.182.170.85:8000/stream"></audio>
+    <audio id="player" src="http://217.182.170.85:8000/live"></audio>
     <div>
-      <button onclick="document.getElementById('player').play()">Play</button>
-      <button onclick="document.getElementById('player').pause()">Pause</button>
-      <button onclick="document.getElementById('player').volume += 0.1">Vol +</button>
-      <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button>
+      <button id="play" onclick="document.getElementById('player').play()">Play</button>
+      <button id="pause" onclick="document.getElementById('player').pause()">Pause</button>
+      <button id="plus" onclick="document.getElementById('player').volume += 0.1">Vol +</button>
+      <button id="moins" onclick="document.getElementById('player').volume -= 0.1">Vol -</button>
     </div>
 
   </div>

@@ -65,7 +65,7 @@ body {
 
 }
 
-/*
+
 #play {
     background: url(images/play.svg) no-repeat;
 
@@ -82,7 +82,7 @@ body {
 #moins {
     background: url(images/moins.svg) no-repeat;
 }
-*/
+
 
 button {
     cursor: pointer;
