@@ -21,47 +21,72 @@ body {
     padding: 0;
 }
 
+@media only screen and (min-device-width: 1200px) {
+    #imageChaudron {
+        display: block;
+        width: calc(50% - 20%);
+        margin-top: 2.5%;
+        margin-left: 10%;
+        margin-right: 7.5%;
+        float: left;
+    }
 
+    #colonneDroite {
+        width: calc(50% - 20%);
+        margin-right: 10%;
+        margin-left: 7.5%;
+        margin-top: 2.5%;
+        float: left;
+        font-family: "Cantique-Normal";
+        line-height: 150%;
+        font-size: 1.25vw;
+    }
 
+    #imageRadio {
 
-#imageChaudron {
-    display: block;
-    width: calc(50% - 500px);
-    margin-top: 100px;
-    margin-left: 300px;
-    margin-right: 200px;
-
-    float: left;
-
-    /*background-color: rgba(0,255,0,0.5);*/
+        display: block;
+        width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1%;
+        margin-bottom: 0.5%;
+        padding: 0;
+    }
 }
 
-#colonneDroite {
-    width: calc(50% - 350px);
-    margin-right: 200px;
-    margin-left: 150px;
-    margin-top: 150px;
-    float: left;
-    font-family:  "Cantique-Normal";
-    line-height: 150%;
-    font-size: 1.25vw;
+@media only screen and (max-device-width: 1200px) {
+    #imageChaudron {
+        display: block;
+        width: calc(75%);
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: 5%;
+        float: none;
+    }
 
+    #colonneDroite {
+        display: block;
+        width: calc(50%);
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: auto;
+        float: none;
+        font-family: "Cantique-Normal";
+        line-height: 150%;
+        font-size: 4vw;
+    }
 
-}
+    #imageRadio {
 
-#imageRadio {
-
-    display: block;
-    width: 25%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    margin-bottom: 20px;
-    padding: 0;
-
-    /*
-    background-color: rgba(255,255,0,0.5);
-    */
+        display: block;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:5%;
+        margin-bottom: 5%;
+        padding: 0;
+    }
 
 }
 
@@ -91,7 +116,8 @@ button {
     height: 100px;
 }
 
+
 button:active {
 
-    width: 500px
+    width: 200px;
 }
